@@ -1,2 +1,4 @@
 # design_pattern_cpp
-design pattern c++ examples 
+ - design pattern c++ examples
+ - gcc(linux)
+ - C++11

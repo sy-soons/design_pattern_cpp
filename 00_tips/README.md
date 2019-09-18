@@ -49,8 +49,8 @@ https://en.cppreference.com/w/cpp/utility/functional/function
 https://en.cppreference.com/w/cpp/language/lambda  
 https://docs.microsoft.com/ko-kr/cpp/cpp/lambda-expressions-in-cpp?view=vs-2019
 
-## enum class 장점
-기존 enum에서 개선된 점
+## enum class 장점  
+기존 enum에서 개선된 점  
 https://unikys.tistory.com/376
 
 

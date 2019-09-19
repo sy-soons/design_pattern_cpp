@@ -1,10 +1,10 @@
 .SUFFIXES : .c .cpp .o
 
-OBJECTS	=	main.o Point.o
-SRCS	= main.cpp Point.cpp
+OBJECTS	=	main.o IHotDrink.o Coffee.o Tea.o HotDrinkFactory.o
+SRCS	= main.cpp IHotDrink.cpp Coffee.cpp Tea.cpp HotDrinkFactory.cpp
 
 CXX	= g++
-CPPFLAGS	= -std=c++11 -lstring -liostream
+CPPFLAGS	= -std=c++1y -lstring -liostream
 $(TARGET) : $(OBJECTS)
 
 all: main

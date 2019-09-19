@@ -49,18 +49,41 @@ https://en.cppreference.com/w/cpp/utility/functional/function
 https://en.cppreference.com/w/cpp/language/lambda  
 https://docs.microsoft.com/ko-kr/cpp/cpp/lambda-expressions-in-cpp?view=vs-2019
 
-## enum class 장점  
-기존 enum에서 개선된 점  
+## enum class 장점
+기존 enum에서 개선된 점
 https://unikys.tistory.com/376
 
 
 ## unique_ptr, shared_ptr
 포인터 소멸에 대한 책임권(소유권)
+make_unique() reference:
+https://en.cppreference.com/w/cpp/memory/unique_ptr/make_unique
   
 ---------------------------------------------------------  
 # 디자인패턴 관련 지식들  
 SOLID 원칙이나 다른 언어에서의 사용 예  
 
 
+# Makefile
+ - g++ 버전 관련(make_unique) 
+linux g++ 4.8에서는 make_unique가 지원되지 않는다.
+c++14를 사용하기 위해서는 CPPFLAG로 c++1y를 사용하면 되지만,
+그래도 make_unique는 사용이 불가능하다.
+4.9부터는 지원된다고 한다.
+https://stackoverflow.com/questions/24609271/errormake-unique-is-not-a-member-of-std
+make_unique는 c++14에서부터 사용이 가능하다는 글
+https://codeday.me/ko/qa/20190321/112766.html
+c++14에서부터 사용이 가능하므로 c++11에서는 직접 만들어서 사용이 가능하다는 글
+https://stackoverflow.com/questions/24609271/errormake-unique-is-not-a-member-of-std
 
 
+ - no rule to make target error
+ https://stackoverflow.com/questions/834748/gcc-makefile-error-no-rule-to-make-target
+해당 파일이 없거나, 해당 코드의 디렉토리가 올바르지 않을 가능성이 높다.
+~~~
+"No rule to make target 'vertex.cpp', needed by 'vertex.o'.  Stop."
+일반적으로 vertex.cpp사용할 수 있는 파일이 없기 때문 입니다. 다음을 확인하십시오.
+ - 해당 파일이 존재합니다.
+ - 당신이 만들 때 당신은 올바른 디렉토리에 있습니다.
+그 외에는 제안 할 것이 많지 않습니다. 해당 디렉토리의 디렉토리 목록을 제공 할 수 있습니다.
+~~~
